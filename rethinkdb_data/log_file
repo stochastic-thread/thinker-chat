@@ -1,0 +1,17 @@
+2015-05-09T23:02:55.774775000 0.055536s notice: Recursively removing directory /Users/arthur/Code/elixir/web_apps/thinker/rethinkdb_data/tmp
+2015-05-09T23:02:55.776485000 0.057251s notice: Initializing directory /Users/arthur/Code/elixir/web_apps/thinker/rethinkdb_data
+2015-05-09T23:02:55.776618000 0.057378s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/arthur/Code/elixir/web_apps/thinker/rethinkdb_data' did not already exist or is empty.)
+2015-05-09T23:02:55.776650000 0.057410s notice: Running rethinkdb 2.0.0-1 (CLANG 4.2 (clang-425.0.28))...
+2015-05-09T23:02:55.781323000 0.062085s notice: Running on Darwin 14.3.0 x86_64
+2015-05-09T23:02:55.781376000 0.062136s notice: Loading data from directory /Users/arthur/Code/elixir/web_apps/thinker/rethinkdb_data
+2015-05-09T23:02:56.297319000 0.578079s info: Automatically using cache size of 100 MB
+2015-05-09T23:02:56.297331000 0.578091s warn: Cache size does not leave much memory for server and query overhead (available memory: 726 MB).
+2015-05-09T23:02:56.297339000 0.578098s warn: Cache size is very low and may impact performance.
+2015-05-09T23:02:56.298552000 0.579312s notice: Listening for intracluster connections on port 29015
+2015-05-09T23:02:56.300117000 0.580877s notice: Listening for client driver connections on port 28015
+2015-05-09T23:02:56.300253000 0.581012s notice: Listening for administrative HTTP connections on port 8080
+2015-05-09T23:02:56.300260000 0.581020s notice: Listening on addresses: 127.0.0.1, ::1
+2015-05-09T23:02:56.300265000 0.581025s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2015-05-09T23:02:56.300270000 0.581029s notice: Server ready, "colle_mac_peq" 64f8c9cd-d2b5-4213-9147-c98eb81aaefa
+2015-05-09T23:02:56.535025000 0.815785s notice: A newer version of the RethinkDB server is available: 2.0.1. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2015-05-09T23:20:10.069465000 1034.376791s notice: Removing file /Users/arthur/Code/elixir/web_apps/thinker/rethinkdb_data/360ed62d-e962-4473-8974-7f26ca0026d9
