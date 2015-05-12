@@ -42,7 +42,7 @@ class App {
           $messages.append(this.messageTemplate(msg))
           scrollTo(0, document.body.scrollHeight)
         })
-
+        
         chan.on("user:entered", msg => {
           var username = this.sanitize(msg.user || "anonymous")
           $messages.append(`<br/><i>[${username} entered]</i>`)

@@ -22,6 +22,8 @@ defmodule Thinker.Router do
     channel "rooms:*", RoomChannel
   end
 
+  resources "/users", UserController
+  
   # Other scopes may use custom stacks.
   # scope "/api", Thinker do
   #   pipe_through :api

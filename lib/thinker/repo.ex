@@ -1,6 +1,6 @@
 defmodule Thinker.Repo do
 	def start_link do
-		conn = Exrethinkdb.connect
+		conn = RethinkDB.connect
 		Agent.start_link(fn -> conn end, name: __MODULE__)
 		{:ok, self}
 	end
@@ -8,7 +8,7 @@ defmodule Thinker.Repo do
 	def run(query) do
 		Agent.get(__MODULE__, fn conn -> 
 			query |> 
-			Exrethinkdb.run conn
+			RethinkDB.run conn
 		end)
 	end
 end

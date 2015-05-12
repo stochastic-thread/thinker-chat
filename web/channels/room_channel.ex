@@ -1,7 +1,7 @@
 defmodule Thinker.RoomChannel do
   use Phoenix.Channel
   require Logger
-  alias Exrethinkdb.Query
+  alias RethinkDB.Query
   alias Thinker.Repo
 
   def join("rooms:lobby", message, socket) do

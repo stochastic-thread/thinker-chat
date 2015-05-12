@@ -17,7 +17,7 @@ defmodule Thinker.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {Thinker, []},
-     applications: [:phoenix, :cowboy, :logger]]
+     applications: [:phoenix, :cowboy, :logger, :postgrex, :ecto]]
   end
 
   # Specifies which paths to compile per environment
@@ -28,9 +28,17 @@ defmodule Thinker.Mixfile do
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 0.11"},
+    [{:phoenix, "~> 0.13"},
+     {:postgrex, ">= 0.0.0"},
+     {:poison, "~> 1.4.0"},
+     {:rethinkdb, "~> 0.0.5"},
+     {:ecto, "~> 0.11.2"},
      {:phoenix_live_reload, "~> 0.3"},
+     {:poolboy, "~> 1.5.1", optional: true},
      {:exrethinkdb, github: "hamiltop/exrethinkdb", ref: "master"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:addict, github: "trenpixster/addict", ref: "master"},
+     {:phoenix_html, "~> 1.0.1"}
+   ]
   end
 end
